@@ -4,55 +4,62 @@ Este dataset contiene 3125 imágenes tomadas en un corral del rancho **CAETEC**,
 
 ***Nota: las imágenes fueron tomadas en los meses de enero a marzo del 2024***
 
+## Información Relevante
+
+Las imágenes fueron clasificadas de la siguiente manera:
+
+* Vaca : 781
+* No vaca : 748
+* Sentada : 1001
+* Parada : 172
+* Día : 673
+* Noche : 594
+* Ruido : 99
+
+Se considera que una imagen tiene *"ruido"* en la imagen no pueden apreciarse los detalles dentro del corral.
+
+#### Consideraciones adicionales:
+- Si hay dos o más vacas y ambas están sentadas o paradas, se clasifica como: noche/día, vaca, parada/sentada.
+- Si hay dos o más vacas y difieren en estado de sentada/parada, se clasifica como: noche/día, vaca.
+- Si solo hay pequeñas partes de la vaca, se clasifica como: no vaca, noche/día.
+
 ## Metodología
 
-Para facilitar la clasificación de las imágenes, estas fueron renombradas y clasificadas a través de folders. Las imágenes están nombradas del 0 al 3125
+Para facilitar la clasificación de las imágenes, estas fueron renombradas del 0 al 3125 con la ayuda de un script.
 
 Para poder llevar a cabo la clasificación de una forma más automatizada, se hizo uso de un *script* realizado en **Python**, una vez ejecutado, el programa se encarga de mostrar una imagen para seleccionar el tipo de características que posee.
 
 Para evitar el error humano, se introdujo una validación, haciendo la clasificación entre dos personas.
 
+Se dividió en batches iguales de 416 imágenes por cada dos personas y un batch más pequeño de 208 imágenes. Después de que cada pareja clasificara su batch con ayuda del *script*, se unieron todos los batches en una carpeta de drive compartida.
+
 ### Algoritmo
 
-**Input requerido:** batch de imágenes
+**Input requerido:** batch de imágenes.
 
 1. Importar el batch de imágenes que debe estar en la carpeta `./batch`.
 
 2. Crear las siguientes 7 carpetas:
-   - vaca.
-   - no_vaca.
-   - día.
-   - noche.
-   - parda.
-   - sentada
+   - Vaca.
+   - No_vaca.
+   - Día.
+   - Noche.
+   - Parada.
+   - Sentada
    - Ruido
 
 3. Iterar sobre un conjunto de imágenes. Para cada imagen:
    - Mostrar la imagen.
    - Preguntar al usuario la clasificación de la imagen (multiselect).
    - Meter cada imagen en la carpeta correspondiente:
-     1. vaca.
-     2. no_vaca.
-     3. día.
-     4. noche.
-     5. parda.
-     6. sentada.
+     1. Vaca.
+     2. No_vaca.
+     3. Día.
+     4. Noche.
+     5. Parda.
+     6. Sentada.
      7. Ruido.
    - Avanzar a la siguiente imagen.
-
-## Información Relevante
-
-Las imágenes fueron clasificadas de la siguiente manera:
-
-* Vaca.
-* No vaca.
-* Sentada.
-* Parada.
-* Día.
-* Noche.
-* Ruido.  
-
-Se considera que una imagen tiene *"ruido"* en la imagen no pueden apreciarse los detalles dentro del corral.
 
 ## Fuente
 
