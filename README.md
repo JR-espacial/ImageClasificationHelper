@@ -31,7 +31,7 @@ Para poder llevar a cabo la clasificación de una forma más automatizada, se hi
 
 Para evitar el error humano, se introdujo una validación, haciendo la clasificación entre dos personas.
 
-Se dividió en batches iguales de 416 imágenes por cada dos personas y un batch más pequeño de 208 imágenes. Después de que cada pareja clasificara su batch con ayuda del *script*, se unieron todos los batches en [una carpeta de drive compartida]([url](https://drive.google.com/drive/u/2/folders/1iic0UTqKdIAImybiaZoK1kFZWYEG48tD)).
+Se dividió en batches iguales de 416 imágenes por cada dos personas y un batch más pequeño de 208 imágenes. Después de que cada pareja clasificara su batch con ayuda del *script*, se unieron todos los batches en ([una carpeta de drive compartida](https://drive.google.com/drive/u/2/folders/1iic0UTqKdIAImybiaZoK1kFZWYEG48tD)).
 
 ### Algoritmo
 
