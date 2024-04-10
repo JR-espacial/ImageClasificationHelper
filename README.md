@@ -8,13 +8,13 @@ Este dataset contiene 3125 imágenes tomadas en un corral del rancho **CAETEC**,
 
 Las imágenes fueron clasificadas de la siguiente manera:
 
-* Vaca : 781
-* No vaca : 748
-* Sentada : 1001
-* Parada : 172
-* Día : 673
-* Noche : 594
-* Ruido : 99
+* Vaca : 781 ocurrencias
+* No vaca : 748 ocurrencias
+* Sentada : 1001 ocurrencias
+* Parada : 172 ocurrencias
+* Día : 673 ocurrencias
+* Noche : 594 ocurrencias
+* Ruido : 99 ocurrencias
 
 Se considera que una imagen tiene *"ruido"* en la imagen no pueden apreciarse los detalles dentro del corral.
 
@@ -31,7 +31,7 @@ Para poder llevar a cabo la clasificación de una forma más automatizada, se hi
 
 Para evitar el error humano, se introdujo una validación, haciendo la clasificación entre dos personas.
 
-Se dividió en batches iguales de 416 imágenes por cada dos personas y un batch más pequeño de 208 imágenes. Después de que cada pareja clasificara su batch con ayuda del *script*, se unieron todos los batches en una carpeta de drive compartida.
+Se dividió en batches iguales de 416 imágenes por cada dos personas y un batch más pequeño de 208 imágenes. Después de que cada pareja clasificara su batch con ayuda del *script*, se unieron todos los batches en [una carpeta de drive compartida]([url](https://drive.google.com/drive/u/2/folders/1iic0UTqKdIAImybiaZoK1kFZWYEG48tD)).
 
 ### Algoritmo
 
